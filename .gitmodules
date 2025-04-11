@@ -1,0 +1,3 @@
+[submodule "AuthenticationService"]
+	path = AuthenticationService
+	url = https://github.com/ehof17/AuthenticationService
