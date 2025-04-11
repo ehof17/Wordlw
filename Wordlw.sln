@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security", "..\Security\Sec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "..\AuthenticationService\AuthenticationService.csproj", "{874FD230-7B63-4318-9BC2-2842642A633F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "AuthenticationService\AuthenticationService.csproj", "{AEDC54E2-B3B0-4C23-8A98-8079EB99EF28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,9 +34,16 @@ Global
 		{874FD230-7B63-4318-9BC2-2842642A633F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{874FD230-7B63-4318-9BC2-2842642A633F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{874FD230-7B63-4318-9BC2-2842642A633F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEDC54E2-B3B0-4C23-8A98-8079EB99EF28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDC54E2-B3B0-4C23-8A98-8079EB99EF28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDC54E2-B3B0-4C23-8A98-8079EB99EF28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDC54E2-B3B0-4C23-8A98-8079EB99EF28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AEDC54E2-B3B0-4C23-8A98-8079EB99EF28} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF04D441-AD4B-40A1-9CC3-87F80382434F}
