@@ -283,12 +283,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Security\Security.csproj">
-      <Project>{4e3994c8-28b1-40a6-b5c0-fc3f828ee01c}</Project>
-      <Name>Security</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
