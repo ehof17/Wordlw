@@ -45,6 +45,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Security\obj\Debug\Security.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -289,10 +293,6 @@
     <WCFMetadataStorage Include="Connected Services\AuthServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Security\Security.csproj">
-      <Project>{4e3994c8-28b1-40a6-b5c0-fc3f828ee01c}</Project>
-      <Name>Security</Name>
-    </ProjectReference>
     <ProjectReference Include="AuthenticationService\AuthenticationService.csproj">
       <Project>{aedc54e2-b3b0-4c23-8a98-8079eb99ef28}</Project>
       <Name>AuthenticationService</Name>
