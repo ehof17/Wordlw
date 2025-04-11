@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wordlw.AuthReference2 {
+namespace Wordlw.AuthServiceReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="AuthReference2.IService1")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="AuthServiceReference.IService1")]
     public interface IService1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Login", ReplyAction="http://tempuri.org/IService1/LoginResponse")]
@@ -29,12 +29,12 @@ namespace Wordlw.AuthReference2 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : Wordlw.AuthReference2.IService1, System.ServiceModel.IClientChannel {
+    public interface IService1Channel : Wordlw.AuthServiceReference.IService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<Wordlw.AuthReference2.IService1>, Wordlw.AuthReference2.IService1 {
+    public partial class Service1Client : System.ServiceModel.ClientBase<Wordlw.AuthServiceReference.IService1>, Wordlw.AuthServiceReference.IService1 {
         
         public Service1Client() {
         }

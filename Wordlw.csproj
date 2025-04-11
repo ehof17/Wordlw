@@ -101,17 +101,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\AuthReference2\Service1.wsdl" />
-    <None Include="Connected Services\AuthReference2\Service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\AuthReference2\Service11.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\AuthReference2\Service1.disco" />
-    <None Include="Connected Services\AuthReference2\configuration91.svcinfo" />
-    <None Include="Connected Services\AuthReference2\configuration.svcinfo" />
-    <None Include="Connected Services\AuthReference2\Reference.svcmap">
+    <None Include="Connected Services\AuthServiceReference\Service1.disco" />
+    <None Include="Connected Services\AuthServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\AuthServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\AuthServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -166,6 +159,13 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="Connected Services\AuthServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\AuthServiceReference\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AuthServiceReference\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -203,7 +203,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Connected Services\AuthReference2\Reference.cs">
+    <Compile Include="Connected Services\AuthServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -286,7 +286,17 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\AuthReference2\" />
+    <WCFMetadataStorage Include="Connected Services\AuthServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Security\Security.csproj">
+      <Project>{4e3994c8-28b1-40a6-b5c0-fc3f828ee01c}</Project>
+      <Name>Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="AuthenticationService\AuthenticationService.csproj">
+      <Project>{aedc54e2-b3b0-4c23-8a98-8079eb99ef28}</Project>
+      <Name>AuthenticationService</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Ajax.Utilities;
 using System;
 using System.Web;
-using Wordlw.AuthReference2;
+using Wordlw.AuthServiceReference;
 using Security;
 namespace Wordlw
 {
